@@ -15,7 +15,7 @@ def home():
     return render_template('home.html')
 
 def rest_request_example():
-    print (requests.get("http://140.86.15.104:3000/fighters/3/45/yellow/j-lourens").text)
+    print (requests.get("http://140.86.15.104:3000/fighters/45/5/yellow/j-lourens").text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()
@@ -29,6 +29,7 @@ def read_db_SQL_example():
 rest_request_example()
 try:
 	read_db_SQL_example()
+	rest_request_example()
 except:
 	print ('Could not connect to database')
 	
