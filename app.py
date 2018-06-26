@@ -4,7 +4,6 @@ from flask import render_template
 from flask_sqlalchemy import SQLAlchemy
 from config import Configuration
 
-
 # create Flask app
 app = Flask(__name__)
 app.config.from_object(Configuration)
