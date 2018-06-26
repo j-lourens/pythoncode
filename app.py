@@ -14,9 +14,7 @@ def home():
      # My microservice!
     return render_template('home.html')
 
-
 def rest_request_example():
-    
     print (requests.get("http://140.86.15.104:3000/reactorCore/320/650/yellow/j-lourens").text) 
 
 def read_db_SQL_example():
