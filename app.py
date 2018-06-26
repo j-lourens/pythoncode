@@ -9,6 +9,7 @@ app = Flask(__name__)
 app.config.from_object(Configuration)
 db = SQLAlchemy(app)
 
+
 # GET request to ip.jsontest.com
 def home():
      # My microservice!
