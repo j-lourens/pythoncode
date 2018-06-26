@@ -1,5 +1,6 @@
 import os
 
+
 class Configuration(object):
     DEBUG = True
     PORT = int(os.getenv('PORT','22222'))
